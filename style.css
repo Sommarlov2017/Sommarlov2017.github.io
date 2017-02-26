@@ -64,21 +64,25 @@ padding-left: 25px;
 }
 
 #aside {
-    width: 250px;
-    height: 500px;
+margin-right: 50px;
+padding-left: 50px;
+width: 250px;
+height: 500px;
     background-color: yellow;
 }
 
 #sectionaside {
     display: flex;
     margin: auto;
-    width: 1700px;
+    width: 800px;
     margin-top: 25px;
 }
 
 #aside ul {
     list-style: none;
     padding-left: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 #aside a {
