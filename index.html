@@ -39,8 +39,39 @@
                     <li><a href="https://en.wikipedia.org/wiki/Train">Train, Wikipedia</a></li><br>
                     <li><a href="https://www.sj.se/en/home.html#/">SJ, Swedish train company</a></li><br>
                 </ul>
+                <h2>Time until summer holilday! </h2>
+<div id="countDown">
+                <script>
+                    //                The date the holiday starts
+                    var summerCountDown = new Date("Jun 15, 2017 11:00:00").getTime();
+
+                    //                Update the count down each second
+                    var x = setInterval(function() {
+                            // Todays Date
+                            var now = new Date().getTime();
+                            // The difference between now and the holiday
+                            var distance = summerCountDown - now;
+                            // The math that calculates days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            // Writes the results in the id
+                            document.getElementById("countDown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                            // If it has passed holiday, then write this
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("aside").innerHTML = "The countdown has finished";
+
+                            }
+
+                        },
+                        1000);
+                </script>
             </div>
         </div>
+      </div>
     </body>
 
 </html>
