@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>The Trainsite :D</title>
+    <link rel="stylesheet" type="text/css" href="style.css" </head>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500i" rel="stylesheet">
+    <body>
+
+
+
+
+                <h2>Tid till sommarlov </h2><br><br><br>
+<div id="countDown">
+                <script>
+                    //                The date the holiday starts
+                    var summerCountDown = new Date("Jun 15, 2017 11:00:00").getTime();
+
+                    //                Update the count down each second
+                    var x = setInterval(function() {
+                            // Todays Date
+                            var now = new Date().getTime();
+                            // The difference between now and the holiday
+                            var distance = summerCountDown - now;
+                            // The math that calculates days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            // Writes the results in the id
+                            document.getElementById("countDown").innerHTML = days + " dagar, " + hours + " timmar, " + minutes + " minuter  och " + seconds + " sekunder ";
+
+                            // If it has passed holiday, then write this
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("countDown").innerHTML = "The countdown has finished";
+
+                            }
+
+                        },
+                        1000);
+
+                </script>
+
+            </div>
+
+      <p>@ Jesper Eriksson, 2017 </p>
+    </body>
+
+</html>

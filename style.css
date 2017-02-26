@@ -1,0 +1,25 @@
+body{
+
+  background-color:#498fff;
+}
+
+h2{
+
+  text-align: center;
+  padding-top: 20px;
+}
+
+#countDown{
+margin: auto;
+  border-radius: 125px;
+  height: 300px;
+  width: 550px;
+  color: white;
+  background-color:#2f78ed;
+  text-align: center;
+  line-height: 250px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 25px;
+}
