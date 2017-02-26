@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>The Trainsite :D</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="Trainsite.png" alt="There should be a logo here...">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+
+        </ul>
+    </div>
+    <div id="sectionaside">
+        <div id="section">
+            <h1>Here are some youtubclips. Enjoy. </h1><br>
+
+            <button class="accordion">X2</button>
+            <div class="panel">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hdQUbbqMfgI" frameborder="0" allowfullscreen></iframe><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5s_1TYLNeTA" frameborder="0" allowfullscreen></iframe><br>
+            </div>
+
+            <button class="accordion">RC6</button>
+            <div class="panel">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TcEG0sOnKGw" frameborder="0" allowfullscreen></iframe><br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/SX2kCw4T9No" frameborder="0" allowfullscreen></iframe><br>
+            </div>
+
+            <button class="accordion">X55</button>
+            <div class="panel">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CqB7cujyvnI" frameborder="0" allowfullscreen></iframe><br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Uk9Ix4wOb80" frameborder="0" allowfullscreen></iframe><br>
+              <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                      if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                        } else {
+                          panel.style.display = "block";
+        }
+    }
+}
+</script>
+            </div>
+        </div>
+
+        <div id="aside">
+
+            <h2>Useful links:</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Train">Train, Wikipedia</a></li><br>
+                <li><a href="https://www.sj.se/en/home.html#/">SJ, Swedish train comapny</a></li><br>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
