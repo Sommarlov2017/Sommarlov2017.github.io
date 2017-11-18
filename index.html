@@ -11,12 +11,12 @@
   });
 </script>
     
-    <title>Snart börjar skolan!</title>
+    <title>Sommarlovsnedräkning!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
      
    
   <meta charset="UTF-8">
-   <meta name="description" content="så långt är det kvar tills sommarlovet slutar!">
+   <meta name="description" content="så långt är det kvar tills sommarlovet börjar!">
   <meta name="keywords" content="Sommarlov, nedräkning">
   <meta name="author" content="Jesper Eriksson">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,14 +37,14 @@
 
 </script>
 
- <h2>Tid till skolstart! </h2><br><br><br>
+ <h2>Tid till sommarlov! </h2><br><br><br>
 
 
                
 <div id="countDown">
                 <script>
                     //                The date the holiday starts
-                    var summerCountDown = new Date("Aug 21, 2017 08:00:00").getTime();
+                    var summerCountDown = new Date("Jun 15, 2018 12:00:00").getTime();
 
                     //                Update the count down each second
                     var x = setInterval(function() {
@@ -63,7 +63,7 @@
                             // If it has passed holiday, then write this
                             if (distance < 0) {
                                 clearInterval(x);
-                                document.getElementById("countDown").innerHTML = "Skolan är i full gång!";
+                                document.getElementById("countDown").innerHTML = "Nu är det sommarlov!";
 
                             }
 
